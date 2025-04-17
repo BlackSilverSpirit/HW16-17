@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3488708467650462597}
   - component: {fileID: 8077693420603877107}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: NpsSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,5 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdleBehaviorType: 0
   ReactionBehaviorType: 0
-  EnemyPrefab: {fileID: 152859395764742470, guid: b6634877ee90e5340989ee0412d4c6c7, type: 3}
-  PatrolPoints: []
+  npsPrefab: {fileID: 152859395764742470, guid: b6634877ee90e5340989ee0412d4c6c7, type: 3}
