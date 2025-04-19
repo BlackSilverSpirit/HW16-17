@@ -27,7 +27,7 @@ public class DetectionZone : MonoBehaviour
 
             _target = other.transform;
 
-            Debug.Log("Цель обнаружена!, начинаю преследование");            
+            Debug.Log("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         }
     }
 
@@ -39,7 +39,7 @@ public class DetectionZone : MonoBehaviour
 
             _target = null;
 
-            Debug.Log("Цель потеряна!");
+            Debug.Log("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
         }
     }
 
@@ -49,4 +49,3 @@ public class DetectionZone : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, _aggroRange);
     }
 }
-

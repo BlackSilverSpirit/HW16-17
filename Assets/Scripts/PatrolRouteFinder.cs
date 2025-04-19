@@ -28,7 +28,7 @@ public class PatrolRouteFinder : MonoBehaviour
         for (int i = 0; i < _patrolPoints.Length - 1; i++)
         {
             Gizmos.DrawLine(_patrolPoints[i].transform.position,
-                          _patrolPoints[i + 1].transform.position);
+                _patrolPoints[i + 1].transform.position);
         }
     }
 }

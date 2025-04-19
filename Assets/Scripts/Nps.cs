@@ -15,17 +15,6 @@ public class Nps : Character
     private IBehaviour _reactionBehaviorType;
     private IBehaviour _currentBehaviour;
 
- protected override void Awake()
-    {
-        base.Awake();
-        _routeFinder = GetComponent<PatrolRouteFinder>();
-    }
-
-    private void Start()
-    {
-        PatrolPoints = _routeFinder.PatrolTransforms;
-    }
-    
     public void Movement(Vector3 direction)
     {
         base.Move(direction);
@@ -53,18 +42,18 @@ public class Nps : Character
         position.y = 0;
         transform.position = position;
     }
-    
+
     private void SwitchBehaviour(IBehaviour behaviour)
     {
-        if (behaviour == null) 
+        if (behaviour == null)
             return;
-        
+
         _currentBehaviour.Exit();
         _currentBehaviour = behaviour;
         _currentBehaviour.Enter();
     }
 
-    public void InitializeSetBehaviors(IdleBehaviorType defenceBehaviour , ReactionBehaviorType reactionBehavior)
+    public void InitializeSetBehaviors(IdleBehaviorType defenceBehaviour, ReactionBehaviorType reactionBehavior)
     {
         _defenceBehaviour = BehaviorCase.Create(defenceBehaviour, this);
         _reactionBehaviorType = ReactionBehaviorCase.Create(reactionBehavior, this, _detectionZone);

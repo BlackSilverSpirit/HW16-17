@@ -54,9 +54,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1034933296173996836}
   - component: {fileID: 152859395764742470}
-  - component: {fileID: 3673089553355087475}
   - component: {fileID: 3499748999638655794}
   - component: {fileID: 4053942926325760045}
+  - component: {fileID: 2217280776141006204}
   m_Layer: 0
   m_Name: Nps
   m_TagString: Untagged
@@ -95,23 +95,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _baseSpeed: 5
+  DieffectPrefab: {fileID: 5812201870618137242}
   _detectionZone: {fileID: 2691411725024694195}
   CurrentPatrolIndex: 0
   PatrolPoints: []
-  DieffectPrefab: {fileID: 5812201870618137242}
---- !u!114 &3673089553355087475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5424217930144392716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7787105e8cac13c469a744f702961dd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _patrolPoints: []
 --- !u!54 &3499748999638655794
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -160,6 +147,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2217280776141006204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424217930144392716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7787105e8cac13c469a744f702961dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _patrolPoints: []
 --- !u!1 &7603673907222691534
 GameObject:
   m_ObjectHideFlags: 0

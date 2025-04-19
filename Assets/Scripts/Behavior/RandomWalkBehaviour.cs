@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class RandomWalkBehaviour : IBehaviour
 
 {
@@ -22,17 +23,14 @@ public class RandomWalkBehaviour : IBehaviour
         if (Time.time >= _nextDirectionChangeTime)
         {
             _randomDirection = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f)).normalized;
-        
-            _nextDirectionChangeTime = Time.time + 1f;  
+
+            _nextDirectionChangeTime = Time.time + 1f;
         }
-        
+
         _nps.Movement(_randomDirection);
     }
 
     public void Exit()
     {
-
     }
 }
-
-

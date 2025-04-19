@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3488708467650462597}
   - component: {fileID: 8077693420603877107}
+  - component: {fileID: 9173941526366259889}
   m_Layer: 0
   m_Name: NpsSpawner
   m_TagString: Untagged
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568c46072c48d31449b88b85c33bf92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdleBehaviorType: 0
-  ReactionBehaviorType: 0
+  idleBehaviorType: 0
+  reactionBehaviorType: 0
   npsPrefab: {fileID: 152859395764742470, guid: b6634877ee90e5340989ee0412d4c6c7, type: 3}
+--- !u!114 &9173941526366259889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8010566467093779458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7787105e8cac13c469a744f702961dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _patrolPoints: []

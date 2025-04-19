@@ -4,13 +4,13 @@ public class RanAwayBehaviour : IBehaviour
 {
     private Nps _nps;
     private DetectionZone _detectionZone;
-    
+
     public RanAwayBehaviour(Nps nps, DetectionZone detectionZone)
     {
         _nps = nps;
         _detectionZone = detectionZone;
     }
-    
+
     public void Enter()
     {
         Update();
@@ -24,6 +24,5 @@ public class RanAwayBehaviour : IBehaviour
 
     public void Exit()
     {
-        
     }
 }

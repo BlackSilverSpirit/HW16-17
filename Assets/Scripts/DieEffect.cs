@@ -15,7 +15,7 @@ public class DieEffect : MonoBehaviour
     {
         if (ParticleSystem != null)
         {
-            if (_isPlay == false) 
+            if (_isPlay == false)
             {
                 ParticleSystem.Play();
 
